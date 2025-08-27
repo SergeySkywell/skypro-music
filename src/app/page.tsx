@@ -1,20 +1,18 @@
-import Image from "next/image";
 import "./page.css";
 import styles from "./page.module.css";
-import Link from "next/link";
 import Bar from "@/components/Bar/Bar";
 import Navigation from "@/components/Navigation/Navigation";
-import Centerblock from "@/components/Cetnerblock/Centerblock";
-import MainSidebar from "@/components/MainSidebar/MainSidebar";
+import Centerblock from "@/components/Centerblock/Centerblock";
+import Sidebar from "@/components/Sidebar/Sidebar";
 
 export default function Home() {
   return (
     <div className={styles.wrapper}>
-      <div className={"container"}>
-        <main className={"main"}>
+      <div className={styles.container}>
+        <main className={styles.main}>
           <Navigation />
           <Centerblock />
-          <MainSidebar />
+          <Sidebar />
         </main>
         <Bar />
         <footer className="footer"></footer>
