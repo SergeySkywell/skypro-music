@@ -43,6 +43,10 @@
 
 .nav__menu {
   display: block;
+  visibility: hidden;
+}
+
+.nav__menu--active {
   visibility: visible;
 }
 

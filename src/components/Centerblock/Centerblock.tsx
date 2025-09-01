@@ -3,9 +3,11 @@ import styles from "../Centerblock/centerblock.module.css";
 import classnames from "classnames";
 import Search from "../Search/Search";
 import { data } from "@/data";
-import { formatTime } from "@/utils/helper";
+import { formatTime, getUniqueValuesByKey } from "@/utils/helper";
 
 export default function Centerblock() {
+  console.log(getUniqueValuesByKey(data, "author"));
+
   return (
     <div className={styles.centerblock}>
       <Search title="Заголовок" />
