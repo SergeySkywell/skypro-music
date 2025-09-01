@@ -8,7 +8,7 @@ import { formatTime } from "@/utils/helper";
 export default function Centerblock() {
   return (
     <div className={styles.centerblock}>
-      <Search />
+      <Search title="Заголовок" />
       <h2 className={styles.centerblock__h2}>Треки</h2>
       <div className={styles.centerblock__filter}>
         <div className={styles.filter__title}>Искать по:</div>
@@ -35,7 +35,7 @@ export default function Centerblock() {
         </div>
         <div className={styles.content__playlist}>
           {data.map((track) => (
-            <div className={styles.playlist__item}>
+            <div className={styles.playlist__item} key={track._id}>
               <div className={styles.playlist__track}>
                 <div className={styles.track__title}>
                   <div className={styles.track__titleImage}>

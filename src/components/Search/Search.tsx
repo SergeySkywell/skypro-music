@@ -3,7 +3,11 @@
 import { useState } from "react";
 import styles from "../Search/search.module.css";
 
-export default function Search() {
+type searchProp = {
+  title: string;
+};
+
+export default function Search({ title }: searchProp) {
   const [searchInput, setSearchInput] = useState("");
 
   const onSearchInput = (e: React.ChangeEvent<HTMLInputElement>) => {
